@@ -1,30 +1,26 @@
 {
     "schemaVersion": 1,
-    "id": "ResourcepackConflicts",
+    "id": "resourcepack-conflicts",
     "version": "${version}",
     "name": "Resourcepack Conflicts",
     "description": "",
-    "authors": [],
+    "authors": ["jacg311"],
     "contact": {
         "repo": "https://github.com/jacg/ResourcepackConflicts"
     },
     "license": "MIT",
     "icon": "assets/ResourcepackConflicts/icon.png",
-    "environment": "*",
+    "environment": "client",
     "entrypoints": {
         "client": [
             "io.github.jacg311.resourcepackconflicts.client.ResourcepackConflictsClient"
-        ],
-        "main": [
-            "io.github.jacg311.resourcepackconflicts.ResourcepackConflicts"
         ]
     },
     "mixins": [
-        "ResourcepackConflicts.mixins.json"
+        "resourcepack-conflicts.mixins.json"
     ],
     "depends": {
         "fabricloader": ">=${loader_version}",
-        "fabric": "*",
         "minecraft": "${minecraft_version}"
     }
 }
